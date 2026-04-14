@@ -1,18 +1,35 @@
 package com.javaintro;
 
 public class Employee {
-	int empId;
-	String employeeName;
-	static double salary=5000;
+	double salary=20000;
+	String name;
+	static int id;
+	double pf,da;
+	double netsalary;
+	{
+		id+=1;
+	}
+	void method(String name,int id,double salary) {
+		pf=salary*0.12;
+		da=100*30;
+		netsalary=salary+da-pf;
+		System.out.println("********************");
+		System.out.println(name);
+		System.out.println(salary);
+		System.out.println(pf);
+		System.out.println(da);
+		System.out.println(netsalary);
+		System.out.println(id);
+	}
 	public static void main(String[] args) {
 		Employee e1=new Employee();
-		e1.employeeName="Ramu";
-		e1.empId=101;
-		salary=salary-0.03*salary-0.07*salary+0.05*salary;
-		System.out.println("name:"+e1.employeeName);
-		System.out.println("id:"+e1.empId);
-		System.out.println("Monthly salary: "+salary);
-		System.out.println("Annual salary: "+(salary*12));
+		id=101;
+		e1.method("harini", id, e1.salary);
+		Employee e2=new Employee();
+		e2.method("malli", id, e2.salary);
+		Employee e3=new Employee();
+		e3.method("harini", id,e3.salary);
+		
+	
 	}
-
 }
