@@ -1,35 +1,33 @@
 package com.methods;
 
 public class Arthematic {
-	static int a=50;
-	static int b=20;
 //	sum
-	static void add() {
+	static void add(byte a,int b) {
 		System.out.println(a+b);
 	}
 //	difference
-	static void sub() {
+	static void sub(int a,int b) {
 		System.out.println(a-b);
 	}
 //product
-	static void mul() {
+	static void mul(int a,int b) {
 		System.out.println(a*b);
 	}
 //quotient
-	static void div() {
+	static void div(int a,int b) {
 		System.out.println(a/b);
 	}
 //remainder
-	static void mod() {
+	static void mod(int a,int b) {
 		System.out.println(a%b);
 	}
 	
 	public static void main(String[] args) {
-		add();
-		sub();
-		mul();
-		div();
-		mod();
+		add((byte)10,20);
+		sub(10,20);
+		mul(10,20);
+		div(10,20);
+		mod(10,20);
 	}
 
 }
