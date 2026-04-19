@@ -8,6 +8,9 @@ public class Methodpractice2 {
 	void display(int age) {
 		System.out.println("your age is: "+age);
 	}
+	static void method7(char a,char b) {
+		System.out.println("your boolean is:"+(a+b));
+	}
 
 	public static void main(String[] args) {
 		Scanner sc =new Scanner(System.in);
@@ -40,6 +43,7 @@ public class Methodpractice2 {
 		System.out.println("enter d2 value: ");
 		double d2=sc.nextDouble();
 		method6(d1,d2);
+		sc.close();
 	}
 	void method3(short diff1,short diff2) {
 		System.out.println("difference is:"+(diff2-diff1));

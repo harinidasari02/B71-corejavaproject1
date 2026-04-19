@@ -2,12 +2,11 @@ package com.practice;
 import java.util.Scanner;
 public class MethodPractice8 {
 	static Scanner sc=new Scanner(System.in);
-//	without arg+ without return type.
-	static void add() {
+//	without arg+ with return type.
+	static int add() {
 		int a=sc.nextInt();
 		int b=sc.nextInt();
-		int addition=a+b;
-		System.out.println(addition);
+		return a+b;
 		
 	}
 //with return+args.
@@ -28,7 +27,8 @@ public class MethodPractice8 {
 		System.out.println(result);
 	}
 	public static void main(String[] args) {
-		add();
+		int sum=add();
+		System.out.println(sum);
 		int a=sc.nextInt();
 		int b=sc.nextInt();
 		int result=sub(a,b);

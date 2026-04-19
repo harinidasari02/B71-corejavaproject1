@@ -20,6 +20,7 @@ public class Methodpractice4 {
 		System.out.println("ENter Gender info : ");
 		char gen = sc.next().charAt(0);//method chaining 
 		genderInfo(gen);
+		sc.close();
 
 	}
 

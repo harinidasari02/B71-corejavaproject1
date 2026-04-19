@@ -1,6 +1,6 @@
 package com.practice;
 import java.util.Scanner;
-public class MethodPractice8 {
+public class MethodPractice9 {
 	static Scanner sc=new Scanner(System.in);
 //	without arg+ with return type.
 	static int add() {

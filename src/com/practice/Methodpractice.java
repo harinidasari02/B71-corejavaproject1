@@ -18,6 +18,7 @@ public class Methodpractice {
 		display(f1,f2);
 		method1(a);
 		method2(c);
+		sc.close();
 	}
 	static void method1(int age) {
 		System.out.println("your age is: "+age);
