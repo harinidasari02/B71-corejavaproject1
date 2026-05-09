@@ -1,4 +1,4 @@
-package ObjectMethods;
+package objectMethods;
 class Student implements Cloneable{
 	int id;
 	String name;
